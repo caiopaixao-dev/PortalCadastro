@@ -3,43 +3,49 @@ Flask==3.0.0
 Flask-CORS==4.0.0
 Werkzeug==3.0.1
 
-# Database drivers
+# Database
 mysql-connector-python==8.2.0
 psycopg2-binary==2.9.9
-sqlite3
+SQLAlchemy==2.0.23
 
-# Security & Authentication
+# Security & Auth
 PyJWT==2.8.0
 bcrypt==4.1.2
-cryptography==41.0.8
-
-# Environment & Configuration
 python-dotenv==1.0.0
 
-# Rate limiting & Security
-Flask-Limiter==3.5.0
-redis==5.0.1
+# Validation & Serialization
+marshmallow==3.20.1
+email-validator==2.1.0
+phonenumbers==8.13.25
 
-# File handling
+# File Handling
 Pillow==10.1.0
+python-magic==0.4.27
 
-# Production server
+# Caching & Performance
+redis==5.0.1
 gunicorn==21.2.0
 
 # Monitoring & Logging
 structlog==23.2.0
+sentry-sdk[flask]==1.38.0
 
-# Validation
-marshmallow==3.20.2
-email-validator==2.1.0
-
-# Testing (development)
+# Development & Testing
 pytest==7.4.3
-pytest-flask==1.3.0
 pytest-cov==4.1.0
-
-# Development tools
-black==23.11.0
+pytest-flask==1.3.0
+pytest-mock==3.12.0
 flake8==6.1.0
+black==23.11.0
 isort==5.12.0
+
+# API Documentation
+flask-restx==1.3.0
+flasgger==0.9.7.1
+
+# Rate Limiting
+Flask-Limiter==3.5.0
+
+# Environment
+python-decouple==3.8
 
