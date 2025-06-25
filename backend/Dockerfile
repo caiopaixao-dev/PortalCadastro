@@ -1,5 +1,5 @@
 # Multi-stage build para otimização
-FROM node:18-alpine AS frontend-builder
+FROM node:24-alpine AS frontend-builder
 
 # Configurar diretório de trabalho
 WORKDIR /app/frontend
