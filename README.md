@@ -199,7 +199,7 @@ Apenas funcionários e colaboradores autorizados da NIMOENERGIA podem contribuir
 ## 📞 Suporte e Contato
 
 ### 🏢 **NIMOENERGIA - Departamento de TI**
-- **Email:** ti@nimoenergia.com.br
+- **Email:** caio.pcoimbra@gmail.com
 - **Telefone:** [Interno apenas]
 - **Slack:** #portal-nimoenergia [Interno]
 
