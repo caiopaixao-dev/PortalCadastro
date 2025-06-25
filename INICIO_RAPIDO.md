@@ -18,7 +18,7 @@ cd PortalCadastro
 # Executar setup automático
 chmod +x scripts/setup.sh
 ./scripts/setup.sh
-```
+``` 
 
 #### **2. Iniciar Sistema (1 min)**
 ```bash
