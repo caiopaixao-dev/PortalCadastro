@@ -1,5 +1,5 @@
 # Multi-stage build para otimização
-FROM python:3.11-slim as builder
+FROM python:3.13-slim as builder
 
 # Instalar dependências do sistema
 RUN apt-get update && apt-get install -y \
@@ -20,7 +20,7 @@ COPY backend/requirements.txt .
 RUN pip install --no-cache-dir --user -r requirements.txt
 
 # Stage final
-FROM python:3.11-slim
+FROM python:3.13-slim
 
 # Instalar dependências runtime
 RUN apt-get update && apt-get install -y \
