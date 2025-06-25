@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portal NIMOENERGIA - Sistema de Gestão de Documentos para Transportadoras" />
+  <meta name="keywords" content="NIMOENERGIA, transportadoras, documentos, gestão, portal" />
+  <meta name="author" content="NIMOENERGIA" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Portal NIMOENERGIA" />
+  <meta property="og:description" content="Sistema de Gestão de Documentos para Transportadoras" />
+  <meta property="og:image" content="/og-image.jpg" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Portal NIMOENERGIA" />
+  <meta property="twitter:description" content="Sistema de Gestão de Documentos para Transportadoras" />
+  <meta property="twitter:image" content="/og-image.jpg" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#2563eb" />
+  
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.json" />
+  
+  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  
+  <title>Portal NIMOENERGIA - Sistema de Gestão de Documentos</title>
+  
+  <style>
+    /* Loading screen styles */
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1e3a8a 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .loading-logo {
+      width: 80px;
+      height: 80px;
+      background: white;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+    
+    .loading-spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid rgba(37, 99, 235, 0.3);
+      border-top: 3px solid #2563eb;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-bottom: 16px;
+    }
+    
+    .loading-text {
+      color: white;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    
+    .loading-subtitle {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 14px;
+      font-weight: 400;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    /* Hide loading screen when app loads */
+    .app-loaded #loading-screen {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    
+    /* Base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: #f9fafb;
+    }
+    
+    #root {
+      min-height: 100vh;
+    }
+    
+    /* Error boundary styles */
+    .error-boundary {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: #f9fafb;
+    }
+    
+    .error-content {
+      text-align: center;
+      max-width: 500px;
+    }
+    
+    .error-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 24px;
+      background: #fee2e2;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .error-title {
+      font-size: 24px;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+    
+    .error-message {
+      font-size: 16px;
+      color: #6b7280;
+      margin-bottom: 24px;
+    }
+    
+    .error-button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    
+    .error-button:hover {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loading-logo">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 17L9 11L13 15L21 7" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14 7H21V14" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="loading-spinner"></div>
+    <div class="loading-text">Portal NIMOENERGIA</div>
+    <div class="loading-subtitle">Carregando sistema...</div>
+  </div>
+
+  <!-- App Root -->
+  <div id="root"></div>
+
+  <!-- Error Fallback (shown if JavaScript fails) -->
+  <noscript>
+    <div class="error-boundary">
+      <div class="error-content">
+        <div class="error-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="#ef4444" stroke-width="2"/>
+            <line x1="15" y1="9" x2="9" y2="15" stroke="#ef4444" stroke-width="2"/>
+            <line x1="9" y1="9" x2="15" y2="15" stroke="#ef4444" stroke-width="2"/>
+          </svg>
+        </div>
+        <h1 class="error-title">JavaScript Necessário</h1>
+        <p class="error-message">
+          Este aplicativo requer JavaScript para funcionar. 
+          Por favor, habilite o JavaScript no seu navegador e recarregue a página.
+        </p>
+        <button class="error-button" onclick="window.location.reload()">
+          Recarregar Página
+        </button>
+      </div>
+    </div>
+  </noscript>
+
+  <!-- Service Worker Registration -->
+  <script>
+    // Register service worker for PWA functionality
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then((registration) => {
+            console.log('SW registered: ', registration);
+          })
+          .catch((registrationError) => {
+            console.log('SW registration failed: ', registrationError);
+          });
+      });
+    }
+
+    // Hide loading screen when app loads
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.body.classList.add('app-loaded');
+      }, 500);
+    });
+
+    // Global error handler
+    window.addEventListener('error', (event) => {
+      console.error('Global error:', event.error);
+      // You can send error reports to your monitoring service here
+    });
+
+    // Unhandled promise rejection handler
+    window.addEventListener('unhandledrejection', (event) => {
+      console.error('Unhandled promise rejection:', event.reason);
+      // You can send error reports to your monitoring service here
+    });
+  </script>
+
+  <!-- Main App Script -->
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
+
