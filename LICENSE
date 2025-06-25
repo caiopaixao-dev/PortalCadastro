@@ -1,22 +1,106 @@
-MIT License
+LICENÇA PROPRIETÁRIA CORPORATIVA
+=================================
 
-Copyright (c) 2024 NIMOENERGIA - Portal de Gestão de Documentos
+Portal de Gestão de Documentos NIMOENERGIA
+Copyright (c) 2024 NIMOENERGIA
+Todos os direitos reservados.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+TERMOS E CONDIÇÕES DE USO
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. PROPRIEDADE INTELECTUAL
+   Este software e toda a documentação associada (o "Software") são propriedade 
+   exclusiva da NIMOENERGIA e estão protegidos por leis de direitos autorais, 
+   marcas registradas e outras leis de propriedade intelectual.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. RESTRIÇÕES DE USO
+   O uso deste Software é ESTRITAMENTE LIMITADO a:
+   a) Funcionários diretos da NIMOENERGIA
+   b) Colaboradores autorizados da NIMOENERGIA
+   c) Prestadores de serviços com contrato vigente com a NIMOENERGIA
+   d) Parceiros comerciais com acordo de confidencialidade assinado
+
+3. PROIBIÇÕES
+   É EXPRESSAMENTE PROIBIDO:
+   a) Distribuir, compartilhar ou divulgar este Software a terceiros não autorizados
+   b) Usar este Software para fins comerciais fora do escopo da NIMOENERGIA
+   c) Modificar, adaptar ou criar obras derivadas sem autorização expressa
+   d) Fazer engenharia reversa, descompilar ou desmontar o Software
+   e) Remover ou alterar avisos de direitos autorais ou propriedade
+   f) Sublicenciar, vender, alugar ou transferir direitos sobre o Software
+
+4. ACESSO E COLABORAÇÃO
+   O acesso ao código-fonte é concedido exclusivamente para:
+   a) Desenvolvimento e manutenção do sistema interno da NIMOENERGIA
+   b) Colaboradores com autorização expressa da equipe de TI da NIMOENERGIA
+   c) Fins de auditoria interna e compliance
+   d) Integração com sistemas internos da NIMOENERGIA
+
+5. CONFIDENCIALIDADE
+   Todo o conteúdo deste repositório é considerado INFORMAÇÃO CONFIDENCIAL e 
+   PROPRIETÁRIA da NIMOENERGIA. Qualquer pessoa com acesso a este Software 
+   concorda em:
+   a) Manter absoluta confidencialidade sobre o código e documentação
+   b) Não divulgar informações técnicas ou de negócio contidas no Software
+   c) Usar as informações exclusivamente para os fins autorizados
+   d) Notificar imediatamente qualquer uso não autorizado ou violação de segurança
+
+6. RESPONSABILIDADES DO USUÁRIO
+   Usuários autorizados devem:
+   a) Proteger suas credenciais de acesso
+   b) Usar o Software apenas para fins legítimos da NIMOENERGIA
+   c) Reportar vulnerabilidades ou problemas de segurança
+   d) Seguir as políticas de segurança da informação da NIMOENERGIA
+   e) Não compartilhar acesso com pessoas não autorizadas
+
+7. LIMITAÇÃO DE RESPONSABILIDADE
+   O Software é fornecido "COMO ESTÁ", sem garantias de qualquer tipo. 
+   A NIMOENERGIA não se responsabiliza por:
+   a) Danos diretos ou indiretos resultantes do uso do Software
+   b) Perda de dados ou interrupção de negócios
+   c) Problemas de compatibilidade com outros sistemas
+   d) Uso inadequado ou não autorizado por terceiros
+
+8. VIOLAÇÃO E PENALIDADES
+   A violação desta licença pode resultar em:
+   a) Revogação imediata do acesso ao Software
+   b) Ação legal por violação de direitos autorais
+   c) Medidas disciplinares para funcionários
+   d) Rescisão de contratos para prestadores de serviços
+   e) Indenização por danos causados à NIMOENERGIA
+
+9. MONITORAMENTO E AUDITORIA
+   A NIMOENERGIA reserva-se o direito de:
+   a) Monitorar o uso do Software
+   b) Auditar o acesso e as modificações
+   c) Revogar acesso a qualquer momento
+   d) Solicitar relatórios de uso e conformidade
+
+10. JURISDIÇÃO E LEI APLICÁVEL
+    Esta licença é regida pelas leis brasileiras. Qualquer disputa será 
+    resolvida nos tribunais competentes do Brasil.
+
+11. CONTATO E AUTORIZAÇÕES
+    Para solicitações de acesso, autorizações ou esclarecimentos:
+    
+    NIMOENERGIA - Departamento de TI
+    Email: ti@nimoenergia.com.br
+    
+    Somente autorizações por escrito da NIMOENERGIA são válidas.
+
+12. VIGÊNCIA
+    Esta licença permanece em vigor enquanto o usuário mantiver acesso 
+    autorizado ao Software. A rescisão não elimina as obrigações de 
+    confidencialidade, que permanecem indefinidamente.
+
+AVISO IMPORTANTE:
+O uso não autorizado deste Software constitui violação de direitos autorais 
+e pode resultar em penalidades civis e criminais conforme a legislação brasileira.
+
+AO ACESSAR OU USAR ESTE SOFTWARE, VOCÊ CONCORDA COM TODOS OS TERMOS DESTA LICENÇA.
+
+---
+
+NIMOENERGIA
+Data: 2024
+Versão da Licença: 1.0
 

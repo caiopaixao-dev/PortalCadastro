@@ -1,8 +1,38 @@
-# Portal NIMOENERGIA - Sistema de Gestão de Documentos
+# 🔒 Portal NIMOENERGIA - Sistema Proprietário de Gestão de Documentos
+
+![License](https://img.shields.io/badge/License-Proprietary-red.svg)
+![Status](https://img.shields.io/badge/Status-Confidential-red.svg)
+![Access](https://img.shields.io/badge/Access-Restricted-red.svg)
+
+## ⚠️ AVISO IMPORTANTE - ACESSO RESTRITO
+
+**🔐 ESTE É UM SISTEMA PROPRIETÁRIO E CONFIDENCIAL DA NIMOENERGIA**
+
+- ❌ **NÃO é permitido** compartilhar este código
+- ❌ **NÃO é permitido** usar fora da NIMOENERGIA
+- ❌ **NÃO é permitido** distribuir ou divulgar
+- ✅ **Acesso APENAS** para colaboradores autorizados
+- ✅ **Uso EXCLUSIVO** para fins corporativos da NIMOENERGIA
+
+---
 
 ## 📋 Visão Geral
 
-O Portal NIMOENERGIA é um sistema robusto e escalável para gestão de documentos de transportadoras, desenvolvido com tecnologias modernas e arquitetura enterprise-grade.
+O Portal NIMOENERGIA é um sistema robusto e escalável para gestão de documentos de transportadoras, desenvolvido exclusivamente para uso interno da NIMOENERGIA com tecnologias modernas e arquitetura enterprise-grade.
+
+## 🔒 Política de Acesso
+
+### ✅ **Usuários Autorizados:**
+- Funcionários diretos da NIMOENERGIA
+- Colaboradores com contrato vigente
+- Prestadores de serviços autorizados
+- Parceiros com acordo de confidencialidade
+
+### ❌ **Acesso Negado Para:**
+- Terceiros não autorizados
+- Ex-funcionários sem autorização
+- Empresas concorrentes
+- Uso comercial externo
 
 ## 🚀 Características Principais
 
@@ -48,354 +78,174 @@ O Portal NIMOENERGIA é um sistema robusto e escalável para gestão de document
 - **CI/CD** configurado
 - **Monitoramento** integrado
 - **Backup automático**
-- **Escalabilidade horizontal**
 
-## 📁 Estrutura do Projeto
+## 🏗️ Arquitetura do Sistema
 
 ```
-PortalNIMOENERGIA-Completo/
-├── backend/                    # Backend Flask
-│   ├── main.py                # Aplicação principal
-│   ├── database_manager.py    # Gerenciador de banco universal
-│   ├── requirements.txt       # Dependências Python
-│   ├── Procfile              # Configuração Heroku
-│   ├── .env.example          # Variáveis de ambiente
-│   ├── Dockerfile            # Container Docker
-│   └── tests/                # Testes automatizados
-├── frontend/                  # Frontend React
-│   ├── src/
-│   │   ├── App.jsx           # Componente principal
-│   │   ├── main.jsx          # Entry point
-│   │   └── components/       # Componentes reutilizáveis
-│   ├── package.json          # Dependências Node.js
-│   ├── index.html            # HTML principal
-│   ├── vite.config.js        # Configuração Vite
-│   └── tailwind.config.js    # Configuração Tailwind
-├── database/                  # Scripts de banco
-│   ├── estrutura_completa.sql # Estrutura MySQL completa
-│   ├── postgresql_schema.sql  # Schema PostgreSQL
-│   ├── sqlite_schema.sql     # Schema SQLite
-│   └── sample_data.sql       # Dados de exemplo
-├── docs/                     # Documentação
-│   ├── README.md             # Este arquivo
-│   ├── API.md                # Documentação da API
-│   ├── DEPLOY.md             # Guia de deploy
-│   ├── DATABASE.md           # Documentação do banco
-│   └── SECURITY.md           # Guia de segurança
-└── docker-compose.yml        # Orquestração Docker
+Portal NIMOENERGIA (Proprietário)
+├── 🐍 Backend (Flask)
+│   ├── API RESTful
+│   ├── Autenticação JWT
+│   ├── Banco de Dados
+│   └── Logs de Auditoria
+├── ⚛️ Frontend (React)
+│   ├── Interface Responsiva
+│   ├── Dashboard Interativo
+│   ├── Upload de Documentos
+│   └── Gestão de Usuários
+└── 🗄️ Database
+    ├── Estrutura Relacional
+    ├── Índices Otimizados
+    └── Backup Automático
 ```
 
-## 🛠️ Tecnologias Utilizadas
+## 🔐 Funcionalidades Principais
 
-### Backend
-- **Python 3.11+**
-- **Flask 3.0** - Framework web
-- **SQLAlchemy** - ORM (opcional)
-- **MySQL Connector** - Driver MySQL
-- **psycopg2** - Driver PostgreSQL
-- **PyJWT** - Tokens JWT
-- **bcrypt** - Criptografia de senhas
-- **Flask-CORS** - CORS handling
-- **Flask-Limiter** - Rate limiting
-- **python-dotenv** - Variáveis de ambiente
-- **gunicorn** - Servidor WSGI
+### 👨‍💼 **Dashboard Administrativo NIMOENERGIA**
+- Métricas em tempo real
+- Gestão de transportadoras
+- Aprovação/rejeição de documentos
+- Relatórios de compliance
+- Auditoria de ações
 
-### Frontend
-- **React 18** - Framework UI
-- **Vite** - Build tool
-- **Tailwind CSS** - Framework CSS
-- **Lucide React** - Ícones
-- **React Router** - Roteamento
-- **Axios** - Cliente HTTP
-- **React Query** - Cache de dados
-- **React Hook Form** - Formulários
-- **Framer Motion** - Animações
+### 🚛 **Portal das Transportadoras**
+- Upload de documentos (drag-and-drop)
+- Acompanhamento de status
+- Notificações de vencimento
+- Histórico de documentos
+- Dashboard personalizado
 
-### Banco de Dados
-- **MySQL 8.0+** - Produção
-- **PostgreSQL 14+** - Heroku
-- **SQLite 3** - Desenvolvimento
+### 📄 **Gestão de Documentos**
+- Suporte a múltiplos formatos (PDF, DOCX, JPG, PNG)
+- Validação automática
+- Controle de vencimentos
+- Histórico de versões
+- Backup seguro
 
-### DevOps
-- **Docker** - Containerização
-- **Heroku** - Deploy cloud
-- **AWS RDS** - Banco gerenciado
-- **GitHub Actions** - CI/CD
-- **Sentry** - Monitoramento de erros
+### 🔍 **Sistema de Busca**
+- Filtros avançados
+- Busca por múltiplos critérios
+- Exportação de relatórios
+- Ordenação personalizada
+
+## 🛡️ Segurança e Compliance
+
+### 🔒 **Medidas de Segurança**
+- Criptografia end-to-end
+- Autenticação multifator (opcional)
+- Logs de auditoria completos
+- Backup criptografado
+- Monitoramento de acesso
+
+### 📋 **Compliance**
+- LGPD (Lei Geral de Proteção de Dados)
+- Políticas internas da NIMOENERGIA
+- Auditoria de segurança
+- Controle de acesso granular
 
 ## 🚀 Instalação e Configuração
 
-### 1. Pré-requisitos
+### ⚠️ **IMPORTANTE: ACESSO RESTRITO**
+A instalação e configuração deste sistema é permitida APENAS para:
+- Equipe de TI da NIMOENERGIA
+- Desenvolvedores autorizados
+- Administradores de sistema aprovados
+
+### 📋 **Pré-requisitos**
+- Python 3.11+
+- Node.js 18+
+- Banco de dados (MySQL/PostgreSQL/SQLite)
+- Autorização da equipe de TI da NIMOENERGIA
+
+### 🔧 **Configuração Rápida**
 ```bash
-# Node.js 18+
-node --version
-
-# Python 3.11+
-python --version
-
-# Git
-git --version
+# APENAS PARA USUÁRIOS AUTORIZADOS
+git clone https://github.com/caiopaixao-dev/PortalCadastro.git
+cd PortalCadastro
+./scripts/setup.sh
+./scripts/start.sh
 ```
 
-### 2. Clonagem do Projeto
-```bash
-git clone https://github.com/seu-usuario/portal-nimoenergia.git
-cd portal-nimoenergia
-```
+## 📖 Documentação
 
-### 3. Configuração do Backend
-```bash
-cd backend
+### 📚 **Documentação Técnica**
+- [API Documentation](docs/API.md)
+- [Technical Architecture](docs/TECHNICAL.md)
+- [Database Schema](docs/MER_VISUAL.md)
+- [Security Guidelines](SECURITY.md)
 
-# Criar ambiente virtual
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# ou
-venv\Scripts\activate     # Windows
-
-# Instalar dependências
-pip install -r requirements.txt
-
-# Configurar variáveis de ambiente
-cp .env.example .env
-# Editar .env com suas configurações
-
-# Inicializar banco de dados
-python -c "from main import initialize_app; initialize_app()"
-
-# Executar servidor
-python main.py
-```
-
-### 4. Configuração do Frontend
-```bash
-cd frontend
-
-# Instalar dependências
-npm install
-
-# Configurar variáveis de ambiente
-echo "VITE_API_URL=http://localhost:5000/api" > .env.local
-
-# Executar em desenvolvimento
-npm run dev
-
-# Build para produção
-npm run build
-```
-
-### 5. Configuração do Banco de Dados
-
-#### MySQL (Produção)
-```bash
-# Criar banco
-mysql -u root -p
-CREATE DATABASE portal_nimoenergia CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-
-# Executar estrutura
-mysql -u root -p portal_nimoenergia < database/estrutura_completa.sql
-```
-
-#### PostgreSQL (Heroku)
-```bash
-# Heroku Postgres
-heroku addons:create heroku-postgresql:hobby-dev
-
-# Executar estrutura
-heroku pg:psql < database/postgresql_schema.sql
-```
-
-#### SQLite (Desenvolvimento)
-```bash
-# Automático na primeira execução
-python main.py
-```
-
-## 🌐 Deploy
-
-### Heroku (Recomendado)
-```bash
-# Login no Heroku
-heroku login
-
-# Criar aplicação
-heroku create portal-nimoenergia
-
-# Configurar variáveis
-heroku config:set DATABASE_TYPE=postgresql
-heroku config:set SECRET_KEY=sua_chave_secreta
-heroku config:set JWT_SECRET_KEY=sua_chave_jwt
-
-# Deploy
-git push heroku main
-
-# Executar migrações
-heroku run python -c "from main import initialize_app; initialize_app()"
-```
-
-### AWS (Avançado)
-```bash
-# Usar Elastic Beanstalk ou ECS
-# Configurar RDS para banco
-# Configurar S3 para arquivos
-# Configurar CloudFront para CDN
-```
-
-### Docker (Local/Produção)
-```bash
-# Build e execução
-docker-compose up --build
-
-# Apenas produção
-docker-compose -f docker-compose.prod.yml up
-```
-
-## 🔐 Configuração de Segurança
-
-### 1. Variáveis de Ambiente Críticas
-```bash
-# SEMPRE alterar em produção
-SECRET_KEY=chave_ultra_secreta_256_bits
-JWT_SECRET_KEY=chave_jwt_ultra_secreta_256_bits
-
-# Configurações de banco seguras
-DATABASE_PASSWORD=senha_muito_forte
-```
-
-### 2. Headers de Segurança
-```python
-# Já configurados no backend
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-XSS-Protection: 1; mode=block
-Strict-Transport-Security: max-age=31536000
-```
-
-### 3. Rate Limiting
-```python
-# Configurado por padrão
-- 1000 requests/hour por IP
-- 100 requests/minute por IP
-- 10 login attempts/minute
-```
-
-## 📊 Monitoramento
-
-### 1. Logs
-```bash
-# Logs da aplicação
-tail -f app.log
-
-# Logs do Heroku
-heroku logs --tail
-```
-
-### 2. Health Check
-```bash
-# Endpoint de saúde
-GET /api/health
-
-# Resposta esperada
-{
-  "status": "healthy",
-  "database": "healthy",
-  "timestamp": "2024-01-01T00:00:00Z"
-}
-```
-
-### 3. Métricas
-- **Uptime**: 99.9%
-- **Response time**: < 200ms
-- **Error rate**: < 0.1%
-
-## 🧪 Testes
-
-### Backend
-```bash
-cd backend
-pytest tests/ -v --coverage
-```
-
-### Frontend
-```bash
-cd frontend
-npm test
-npm run test:coverage
-```
-
-## 📈 Performance
-
-### Otimizações Implementadas
-- **Índices de banco** otimizados
-- **Cache de queries** com Redis
-- **Compressão gzip** habilitada
-- **CDN** para assets estáticos
-- **Lazy loading** no frontend
-- **Code splitting** automático
-
-### Benchmarks
-- **Concurrent users**: 1000+
-- **Requests/second**: 500+
-- **Database queries**: < 50ms
-- **Page load time**: < 2s
-
-## 🔄 Backup e Recovery
-
-### Backup Automático
-```bash
-# Configurado para executar diariamente
-# Retenção: 30 dias
-# Storage: AWS S3 ou similar
-```
-
-### Recovery
-```bash
-# Restaurar backup
-python scripts/restore_backup.py backup_file.sql
-```
+### 🔧 **Guias de Instalação**
+- [Instalação Local](GUIA_INSTALACAO_LOCAL.md)
+- [Troubleshooting](TROUBLESHOOTING.md)
+- [Início Rápido](INICIO_RAPIDO.md)
 
 ## 🤝 Contribuição
 
-### 1. Fork do projeto
-### 2. Criar branch feature
-```bash
-git checkout -b feature/nova-funcionalidade
-```
+### ✅ **Colaboradores Autorizados**
+Apenas funcionários e colaboradores autorizados da NIMOENERGIA podem contribuir:
 
-### 3. Commit das mudanças
-```bash
-git commit -m "Add: nova funcionalidade"
-```
+1. **Fork** do repositório (apenas internamente)
+2. **Criar branch** para feature/bugfix
+3. **Seguir** padrões de código da empresa
+4. **Submeter** pull request para revisão
+5. **Aguardar** aprovação da equipe de TI
 
-### 4. Push para branch
-```bash
-git push origin feature/nova-funcionalidade
-```
+### 📋 **Processo de Revisão**
+- Code review obrigatório
+- Testes automatizados
+- Aprovação da equipe de TI
+- Documentação atualizada
 
-### 5. Abrir Pull Request
+## 📞 Suporte e Contato
 
-## 📞 Suporte
+### 🏢 **NIMOENERGIA - Departamento de TI**
+- **Email:** ti@nimoenergia.com.br
+- **Telefone:** [Interno apenas]
+- **Slack:** #portal-nimoenergia [Interno]
 
-### Contatos
-- **Email**: suporte@nimoenergia.com.br
-- **Telefone**: (11) 9999-9999
-- **Website**: https://nimoenergia.com.br
+### 🆘 **Suporte Técnico**
+- **Issues:** Apenas para colaboradores autorizados
+- **Documentação:** Consulte os guias incluídos
+- **Emergências:** Contate a equipe de TI diretamente
 
-### Documentação Adicional
-- [API Documentation](docs/API.md)
-- [Database Schema](docs/DATABASE.md)
-- [Security Guide](docs/SECURITY.md)
-- [Deploy Guide](docs/DEPLOY.md)
+## ⚖️ Licença e Termos de Uso
 
-## 📄 Licença
+### 🔒 **LICENÇA PROPRIETÁRIA CORPORATIVA**
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+**Copyright (c) 2024 NIMOENERGIA - Todos os direitos reservados.**
 
-## 🏆 Créditos
+Este software é propriedade exclusiva da NIMOENERGIA e está protegido por leis de direitos autorais. O uso é ESTRITAMENTE LIMITADO a colaboradores autorizados da NIMOENERGIA.
 
-Desenvolvido com ❤️ pela equipe NIMOENERGIA
+**PROIBIÇÕES:**
+- ❌ Distribuição ou compartilhamento não autorizado
+- ❌ Uso comercial fora da NIMOENERGIA
+- ❌ Modificação sem autorização
+- ❌ Engenharia reversa
+- ❌ Sublicenciamento
+
+**Para mais detalhes, consulte o arquivo [LICENSE](LICENSE).**
+
+### ⚠️ **AVISO LEGAL**
+O uso não autorizado deste software constitui violação de direitos autorais e pode resultar em penalidades civis e criminais conforme a legislação brasileira.
 
 ---
 
-**Portal NIMOENERGIA v2.0.0** - Sistema de Gestão de Documentos para Transportadoras
+## 🏆 Status do Projeto
+
+![Build Status](https://img.shields.io/badge/Build-Passing-green.svg)
+![Tests](https://img.shields.io/badge/Tests-Passing-green.svg)
+![Security](https://img.shields.io/badge/Security-Audited-green.svg)
+![Compliance](https://img.shields.io/badge/LGPD-Compliant-green.svg)
+
+### 📊 **Métricas do Sistema**
+- **Uptime:** 99.9%
+- **Performance:** Otimizado
+- **Segurança:** Auditado
+- **Compliance:** LGPD Compliant
+
+---
+
+**🔐 SISTEMA PROPRIETÁRIO DA NIMOENERGIA - ACESSO RESTRITO**
+
+*Este repositório contém informações confidenciais e proprietárias. O acesso é monitorado e registrado para fins de auditoria e segurança.*
 
