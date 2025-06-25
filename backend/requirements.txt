@@ -27,7 +27,7 @@ redis==5.0.1
 gunicorn==21.2.0
 
 # Monitoring & Logging
-structlog==23.2.0
+structlog==25.4.0
 sentry-sdk[flask]==1.38.0
 
 # Development & Testing
