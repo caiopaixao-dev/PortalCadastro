@@ -165,7 +165,7 @@ jobs:
 
     - name: 🏗️ Build Docker image (test)
       continue-on-error: true
-      uses: docker/build-push-action@v5
+      uses: docker/build-push-action@v6
       with:
         context: .
         file: ./backend/Dockerfile
